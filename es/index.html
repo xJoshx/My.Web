@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>xJoshx</title>
+
+    <meta name="description" content="Best designer, software engineer and illustrator portfolio" />
+    <meta name="keywords" content="personal, portfolio, designer, design, software, engineer, developer, front-end, back-end, illustration, illustrator, shitty wizard" />
+    <meta name="author" content="joshsieben.com" />
+
+    <link rel="shortcut icon" href="../img/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="../stylesheets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/api.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/master.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style-responsive.css" />
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="item">
+            <img src="../bower_components/svg-loaders/svg-loaders/audio.svg">
+        </div>
+    </div>
+
+
+    <div class="container">
+
+
+        <!-- section start-page -->
+
+        <section class="start-page parallax-background" id="home">
+            <script id="profile-template" type="text/x-handlebars-template">
+                < div class = "opacity" > < /div> <!-- Opacity color -->
+      <div class="content">
+        <div class="text">
+        
+          <div class="logo"><img src="{{user.images.[138]}}"></div >
+
+                 < h1 > {
+                    {
+                        user.display_name
+                    }
+                } < /h1><hr/ >
+                    < p > {
+                        {
+                            user.fields
+                        }
+                } < /p>
+          
+          <a href="#about-us"><div class="read-more">DIME MÁS</div > < /a>
+          
+        </div >
+                    < div class = "arrow-down" > < /div>
+      </div >
+            </script>
+        </section>
+
+        <!-- section menu mobile -->
+
+        <section class="menu-media">
+
+            <div class="menu-content">
+
+                <div class="logo">JOSH SIEBEN</div>
+
+                <div class="icon">
+                    <a href="#">
+                        <img src="../img/icons/menu-media.png" />
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <ul class="menu-click">
+            <a href="#home">
+                <li href="#home">INICIO</li>
+            </a>
+            <a href="#about-us">
+                <li href="#about-us">QUIÉN SOY</li>
+            </a>
+            <a href="#portfolio">
+                <li href="#portfolio">PORTFOLIO</li>
+            </a>
+            <a href="#contact">
+                <li href="#contact">CONTACTO</li>
+            </a>
+
+        </ul>
+
+
+        <!-- section menu -->
+
+        <section class="menu">
+
+            <div class="menu-content">
+
+                <div class="logo">JOSH SIEBEN</div>
+
+                <ul id="menu">
+                    <li><a href="#home">INICIO</a>
+                    </li>
+                    <li><a href="#about-us">QUIÉN SOY</a>
+                    </li>
+                    <li><a href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li><a href="#contact">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </section>
+
+
+        <!-- section about us -->
+
+        <section class="about-us" id="about-us">
+
+            <div class="content">
+
+                <h1>QUIÉN SOY</h1>
+                <hr/>
+                <p class="title">Desarrollador Front/Back y de Apps. Obsesión por el diseño. Ilustrador. @Madrid.</p>
+
+                <div class="column-one">
+
+                    <div class="circle-one"></div>
+
+                    <h2>DESARROLLADOR</h2>
+                    <p>Graduado en la @UPM en Ingeniería del Software.</p>
+
+                </div>
+
+                <div class="column-two">
+
+                    <div class="circle-two"></div>
+
+                    <h2>DISEÑADOR</h2>
+                    <p>Obsesión por el diseño, la Bauhaus, la tipografía y el Front.</p>
+
+                </div>
+
+
+                <div class="column-three">
+
+                    <div class="circle-three"></div>
+
+                    <h2>ILUSTRADOR</h2>
+                    <p>Curso intensivo en @ESDIP.</p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <div class="clear"></div>
+
+        <!-- portoflio-->
+
+        <section class="portfolio" id="portfolio">
+
+
+
+            <div class="portfolio-margin">
+
+                <h1>PORTFOLIO</h1>
+                <hr/>
+
+                <!-- 1 item portoflio-->
+
+                <ul class="grid" id="portfolio-grid">
+
+                    <script id="portfolio-template" type="text/x-handlebars-template">
+                        {
+                            {#
+                                each projects
+                            }
+                        }
+
+                         < li >
+                            < a href = "{{this.url}}" > {
+                                {#
+                                    if this.covers.[404]
+                                }
+                        } < img src = "{{this.covers.[404]}}"
+                        alt = "{{this.name}}"
+                        title = "{{this.name}}" > {
+                            {
+                                else
+                            }
+                        } {
+                            {#
+                                if this.covers.[230]
+                            }
+                        } < img src = "{{this.covers.[230]}}"
+                        alt = "{{this.name}}" > {
+                            {
+                                else
+                            }
+                        } < img src = "{{this.covers.[202]}}"
+                        alt = "{{this.name}}" > {
+                            {
+                                /if}}
+						{{/if
+                            }
+                        } < div class = "text" >
+                            < p > {
+                                {
+                                    this.name
+                                }
+                        } < /p>
+                  <p class="description">{{this.fields}}</p >
+                            < /div>
+            </a >
+                            < /li>
+          
+        {{/each
+                        }
+                        }
+                    </script>
+
+                </ul>
+
+                <a href="#experiments">
+                    <div class="read-more">Experimentos</div>
+                </a>
+            </div>
+
+
+
+        </section>
+
+
+        <div class="clear"></div>
+
+
+
+
+        <!-- partners-->
+
+        <section class="partners parallax-background-partners" id="experiments">
+
+            <div class="opacity"></div>
+
+            <div class="content">
+
+                <h2>EXPERIMENTOS</h2>
+
+                <div class="logo">
+
+                    <a href="#">
+                        <img src="../img/logos/alex1.png">
+                    </a>
+                    <a href="#">
+                        <img src="../img/logos/archiq.png">
+                    </a>
+                    <a href="#">
+                        <img src="../img/logos/thomsoon.png">
+                    </a>
+                    <a href="#">
+                        <img src="../img/logos/alex2.png">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact-->
+
+        <!-- Contact-->
+
+        <section class="contact" id="contact">
+            <h1>Contacto</h1>
+            <hr/>
+
+            <div class="content">
+
+                <div class="form">
+
+                    <form method="post" action="../php/mail.php" name="kontakt">
+
+                        <div class="column">
+                            QUIÉN ERES
+                            <br/>
+                            <br/>
+                            <input name="name" id="name" value="" />
+                        </div>
+
+                        <div class="column-2">
+                            TU EMAIL
+                            <br/>
+                            <br/>
+                            <input name="email" id="email" value="" />
+                        </div>
+
+
+                        <div class="column-3">
+                            QUÉ QUIERES
+                            <br/>
+                            <br/>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+
+                        <div class="button">
+                            <span><input class="submit" id="submit" name="submit" type="submit" value="PREGUNTA"></span>
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <div class="contact-text">
+
+                    Para contactar conmigo usa este formulario.
+                    <br/>
+                    <br/>Cuando me quieras mandar archivos, usa
+                    <br/>este email
+                    <br/>
+                    <br/>
+
+                    <strong>Josh Sieben</strong>
+                    <br/>
+                    <br/>email: <strong>heyjosh@joshsieben.com</strong>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <section class="footer">
+
+            <div class="logo">
+                <img src="../img/logo-footer.png">
+            </div>
+            <div class="menu-footer">
+
+                <a href="#home">Inicio</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">RSS</a>
+                <a href="#">Facebook</a>
+                <a href="#">Dribble</a>
+                <a href="#">Twitter</a>
+                <a href="#">Contacto</a>
+
+            </div>
+
+            <div class="copyright">© 2014. Josh Sieben. Gracias a <a href="www.thomsoon.com">Thomsoon</a> por el template. Gracias a <a href="http://www.behance.net">Behance</a> por la API</div>
+
+
+        </section>
+
+
+    </div>
+
+
+
+    <!-- Scripts -->
+    <script src="../js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui-1.10.4.min.js" type="text/javascript"></script>
+    <!-- jQuery -->
+    <script src="../js/handlebars-v2.0.0.js"></script>
+    <!-- Handlebars -->
+    <script src="../js/jquery.parallax.js"></script>
+    <!-- jQuery Parallax -->
+    <script src="../js/jquery.nicescroll.js"></script>
+    <!-- jQuery NiceScroll -->
+    <script src="../js/jquery.sticky.js"></script>
+    <!-- jQuery Stick Menu -->
+    <script src="../js/script-api.js"></script>
+    <!-- All script -->
+
+</body>
+
+</html>

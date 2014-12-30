@@ -1,0 +1,42 @@
+@import "../bower_components/compass-mixins/lib/compass/css3/font-face";
+ 
+@include font-face("Montserrat", font-files("../fonts/montserrat/Montserrat-Hairline.otf"), "",200);
+@include font-face("Montserrat", font-files("../fonts/montserrat/Montserrat-Light.otf"), "",300);
+@include font-face("Montserrat", font-files("../fonts/montserrat/Montserrat-Regular.otf"), "",400);
+@include font-face("Montserrat", font-files("../fonts/montserrat/Montserrat-Bold.otf"), "",bold);
+@include font-face("Montserrat", font-files("../fonts/montserrat/Montserrat-Black.otf"), "",800);
+/*
+@font-face {
+    font-family: Montserrat;
+    font-weight: 200;
+    src: url("../fonts/montserrat/Montserrat-Hairline.otf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 300;
+    src: url("../fonts/montserrat/Montserrat-Light.otf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 400;
+    src: url("../fonts/montserrat/Montserrat-Regular.otf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: bold;
+    src: url("../fonts/montserrat/Montserrat-Bold.otf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 800;
+    src: url("../fonts/montserrat/Montserrat-Black.otf");
+}
+*/
+/*=========================================
+Typefaces from Google Fonts or Edge
+=========================================*/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,100,700,900&subset=latin,latin-ext);

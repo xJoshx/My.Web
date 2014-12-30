@@ -1,0 +1,1108 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,100,700,900&subset=latin,latin-ext);
+/*===============================================
+Modifications from the template
+===============================================*/
+/*===============================================
+Preloader modifications
+===============================================*/
+/* line 11, /Users/jose/Documents/my.web/scss/_custom.theme */
+.loader {
+  fill: #333; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: font-url("");
+  src: font-url(?#iefix) format('eot'), font-files("../fonts/montserrat/Montserrat-Hairline.otf");
+  font-weight: 200; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: font-url("");
+  src: font-url(?#iefix) format('eot'), font-files("../fonts/montserrat/Montserrat-Light.otf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: font-url("");
+  src: font-url(?#iefix) format('eot'), font-files("../fonts/montserrat/Montserrat-Regular.otf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: font-url("");
+  src: font-url(?#iefix) format('eot'), font-files("../fonts/montserrat/Montserrat-Bold.otf");
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: font-url("");
+  src: font-url(?#iefix) format('eot'), font-files("../fonts/montserrat/Montserrat-Black.otf");
+  font-weight: 800; }
+
+/*
+@font-face {
+    font-family: Montserrat;
+    font-weight: 200;
+    src: url("../fonts/montserrat/Montserrat-Hairline.otf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 300;
+    src: url("../fonts/montserrat/Montserrat-Light.otf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 400;
+    src: url("../fonts/montserrat/Montserrat-Regular.otf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: bold;
+    src: url("../fonts/montserrat/Montserrat-Bold.otf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-weight: 800;
+    src: url("../fonts/montserrat/Montserrat-Black.otf");
+}
+*/
+/*=========================================
+Typefaces from Google Fonts or Edge
+=========================================*/
+/* Skills variables*/
+/* Charts variables */
+/*$main-color: #19DD89;*/
+/* line 10, /Users/jose/Documents/my.web/scss/_api */
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  z-index: 99999; }
+
+/* line 18, /Users/jose/Documents/my.web/scss/_api */
+.preloader .item {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -50px; }
+
+/* line 29, /Users/jose/Documents/my.web/scss/_api */
+html, body {
+  font-family: 'Montserrat', 'Lato', sans-serif;
+  font-size: 15px;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  color: black;
+  font-weight: 400;
+  height: 100%; }
+
+/* line 38, /Users/jose/Documents/my.web/scss/_api */
+a {
+  text-decoration: none;
+  outline: none;
+  font-size: 14px; }
+
+/* line 44, /Users/jose/Documents/my.web/scss/_api */
+h1 {
+  font-size: 34px;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  line-height: 1.2; }
+
+/* line 53, /Users/jose/Documents/my.web/scss/_api */
+p {
+  font-size: 14px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-top: 40px; }
+
+/* line 62, /Users/jose/Documents/my.web/scss/_api */
+h1 span {
+  color: #0DE5A8; }
+
+/* line 67, /Users/jose/Documents/my.web/scss/_api */
+::selection {
+  background: #0DE5A8;
+  color: white; }
+
+/* line 72, /Users/jose/Documents/my.web/scss/_api */
+::-moz-selection {
+  background: #0DE5A8;
+  color: white; }
+
+/* line 78, /Users/jose/Documents/my.web/scss/_api */
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+/* Start page */
+/* line 86, /Users/jose/Documents/my.web/scss/_api */
+.start-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('../img/background/start-page.png') #c0c0c0 bottom center fixed no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 10; }
+
+/* line 98, /Users/jose/Documents/my.web/scss/_api */
+.start-page hr {
+  color: white;
+  margin-top: 30px;
+  background-color: white;
+  height: 1px;
+  width: 106px;
+  border: 0; }
+
+/* line 108, /Users/jose/Documents/my.web/scss/_api */
+.start-page .opacity {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.5);
+  /* Standard Off */ }
+
+/* line 116, /Users/jose/Documents/my.web/scss/_api */
+.start-page .content {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+  height: 100%; }
+
+/* line 123, /Users/jose/Documents/my.web/scss/_api */
+.start-page .content .text {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 700px;
+  height: 520px; }
+
+/* line 135, /Users/jose/Documents/my.web/scss/_api */
+.start-page .content .text img {
+  width: 256px; }
+
+/* line 139, /Users/jose/Documents/my.web/scss/_api */
+.start-page .content .text .logo {
+  width: 256px;
+  height: 256px;
+  margin: 0 auto 50px; }
+
+/* line 147, /Users/jose/Documents/my.web/scss/_api */
+.start-page .content .text .read-more {
+  width: 183px;
+  height: 47px;
+  margin: 100px auto;
+  line-height: 47px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  color: white;
+  display: block;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: none;
+  -webkit-transition: all 0.6s ease-in;
+  -moz-transition: all 0.6s ease-in;
+  -ms-transition: all 0.6s ease-in;
+  -o-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in; }
+
+/* line 167, /Users/jose/Documents/my.web/scss/_api */
+.start-page .content .text .read-more:hover {
+  color: white;
+  background: #0DE5A8;
+  border: 1px solid #0DE5A8; }
+
+/* line 173, /Users/jose/Documents/my.web/scss/_api */
+.start-page .content .arrow-down {
+  position: absolute;
+  bottom: 110px;
+  left: 50%;
+  margin-left: -10px;
+  width: 21px;
+  height: 29px;
+  background: url(../img/arrow-down.png) no-repeat center center;
+  display: block;
+  -webkit-animation: bounce-fade 1.2s infinite;
+  /* Safari 4+ */
+  -moz-animation: bounce-fade 1.2s infinite;
+  /* Fx 5+ */
+  -o-animation: bounce-fade 1.2s infinite;
+  /* Opera 12+ */
+  animation: bounce-fade 1.2s infinite;
+  /* IE 10+ */ }
+
+@-webkit-keyframes bounce-fade {
+  /* line 190, /Users/jose/Documents/my.web/scss/_api */
+  0% {
+    opacity: 0;
+    bottom: 70px; }
+
+  /* line 191, /Users/jose/Documents/my.web/scss/_api */
+  100% {
+    opacity: 1;
+    bottom: 35px; } }
+
+@-moz-keyframes bounce-fade {
+  /* line 194, /Users/jose/Documents/my.web/scss/_api */
+  0% {
+    opacity: 0;
+    bottom: 70px; }
+
+  /* line 195, /Users/jose/Documents/my.web/scss/_api */
+  100% {
+    opacity: 1;
+    bottom: 35px; } }
+
+@-o-keyframes bounce-fade {
+  /* line 198, /Users/jose/Documents/my.web/scss/_api */
+  0% {
+    opacity: 0;
+    bottom: 70px; }
+
+  /* line 199, /Users/jose/Documents/my.web/scss/_api */
+  100% {
+    opacity: 1;
+    bottom: 35px; } }
+
+@keyframes bounce-fade {
+  /* line 202, /Users/jose/Documents/my.web/scss/_api */
+  0% {
+    opacity: 0;
+    bottom: 70px; }
+
+  /* line 203, /Users/jose/Documents/my.web/scss/_api */
+  100% {
+    opacity: 1;
+    bottom: 35px; } }
+
+/* Menu mobile */
+/* line 209, /Users/jose/Documents/my.web/scss/_api */
+.menu-media {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  background: #0DE5A8;
+  z-index: 1000;
+  display: none; }
+
+/* line 218, /Users/jose/Documents/my.web/scss/_api */
+.menu-media .menu-content {
+  width: 280px;
+  position: relative;
+  margin: 0 auto; }
+
+/* line 224, /Users/jose/Documents/my.web/scss/_api */
+.menu-media .menu-content .logo {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  width: 200px;
+  line-height: 90px;
+  float: left;
+  list-style: none; }
+
+/* line 234, /Users/jose/Documents/my.web/scss/_api */
+.menu-media .menu-content .icon {
+  width: 41px;
+  height: 23px;
+  float: right;
+  line-height: 100px; }
+
+/* line 241, /Users/jose/Documents/my.web/scss/_api */
+.menu-click {
+  display: none; }
+
+/* line 246, /Users/jose/Documents/my.web/scss/_api */
+.menu-click li {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  color: #333333;
+  font-size: 18px;
+  text-align: center;
+  line-height: 70px;
+  z-index: 1000;
+  border-bottom: 1px solid #f2f2f2;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+/* line 263, /Users/jose/Documents/my.web/scss/_api */
+.menu-click li:hover {
+  color: #0DE5A8; }
+
+/* Menu */
+/* line 270, /Users/jose/Documents/my.web/scss/_api */
+.menu {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background: white;
+  border-bottom: 1px solid #f2f2f2;
+  z-index: 1000; }
+
+/* line 279, /Users/jose/Documents/my.web/scss/_api */
+.menu-content {
+  width: 900px;
+  position: relative;
+  margin: 0 auto; }
+
+/* line 285, /Users/jose/Documents/my.web/scss/_api */
+.menu-content .logo {
+  color: #333;
+  font-weight: 700;
+  font-size: 24px;
+  width: 300px;
+  line-height: 60px;
+  float: left;
+  list-style: none; }
+
+/* line 295, /Users/jose/Documents/my.web/scss/_api */
+.menu-content ul {
+  width: 600px;
+  left: 50%;
+  float: right;
+  text-align: right;
+  list-style: none; }
+
+/* line 304, /Users/jose/Documents/my.web/scss/_api */
+.menu-content li {
+  display: inline-block;
+  position: relative; }
+
+/* line 309, /Users/jose/Documents/my.web/scss/_api */
+.menu-content li a {
+  color: #333;
+  font-size: 16px;
+  display: block;
+  padding: 0 20px 0 20px;
+  line-height: 60px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+/* line 322, /Users/jose/Documents/my.web/scss/_api */
+.menu-content li.active a {
+  color: #0DE5A8; }
+
+/* line 326, /Users/jose/Documents/my.web/scss/_api */
+.menu-content li a:hover {
+  color: #0DE5A8; }
+
+/* About us */
+/* line 333, /Users/jose/Documents/my.web/scss/_api */
+.about-us {
+  position: relative;
+  width: 100%;
+  background: white;
+  z-index: 10; }
+
+/* line 340, /Users/jose/Documents/my.web/scss/_api */
+.about-us .content {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+/* line 347, /Users/jose/Documents/my.web/scss/_api */
+.about-us h1 {
+  font-size: 34px;
+  color: black;
+  text-align: center;
+  margin-top: 120px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2; }
+
+/* line 359, /Users/jose/Documents/my.web/scss/_api */
+.about-us hr {
+  color: black;
+  margin-top: 30px;
+  background-color: black;
+  height: 1px;
+  width: 106px;
+  border: 0; }
+
+/* line 369, /Users/jose/Documents/my.web/scss/_api */
+.about-us p.title {
+  color: #a4a4a4;
+  margin: 40px auto;
+  width: 300px;
+  line-height: 26px;
+  letter-spacing: 0;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: center; }
+
+/* line 380, /Users/jose/Documents/my.web/scss/_api */
+.about-us h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 26px;
+  color: black;
+  line-height: 1.2;
+  letter-spacing: 6px;
+  width: 100%;
+  position: relative;
+  font-weight: 400; }
+
+/* line 392, /Users/jose/Documents/my.web/scss/_api */
+.about-us p {
+  text-align: center;
+  font-size: 14px;
+  width: 250px;
+  margin: 30px auto;
+  color: #a4a4a4;
+  line-height: 26px;
+  letter-spacing: 0;
+  position: relative;
+  font-weight: 200; }
+
+/* line 404, /Users/jose/Documents/my.web/scss/_api */
+.about-us .column-one {
+  margin-top: 40px;
+  width: 300px;
+  float: left;
+  margin-bottom: 70px;
+  height: 350px; }
+
+/* line 412, /Users/jose/Documents/my.web/scss/_api */
+.about-us .column-one .circle-one {
+  height: 100px;
+  position: relative;
+  margin: 0 auto;
+  border: 2px solid #f0f0f0;
+  background: url(../img/icons/engineer.gif) white no-repeat center center;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  width: 100px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+/* line 430, /Users/jose/Documents/my.web/scss/_api */
+.about-us .column-one .circle-one:hover {
+  border: 2px solid #0DE5A8; }
+
+/* line 435, /Users/jose/Documents/my.web/scss/_api */
+.about-us .column-two {
+  margin-top: 40px;
+  width: 300px;
+  float: left;
+  margin-bottom: 70px;
+  height: 350px; }
+
+/* line 443, /Users/jose/Documents/my.web/scss/_api */
+.about-us .column-two .circle-two {
+  height: 100px;
+  position: relative;
+  margin: 0 auto;
+  border: 2px solid #f0f0f0;
+  background: url(../img/icons/designer.gif) white no-repeat center center;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  width: 100px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+/* line 461, /Users/jose/Documents/my.web/scss/_api */
+.about-us .column-two .circle-two:hover {
+  border: 2px solid #0DE5A8; }
+
+/* line 466, /Users/jose/Documents/my.web/scss/_api */
+.about-us .column-three {
+  margin-top: 40px;
+  width: 300px;
+  float: left;
+  margin-bottom: 70px;
+  height: 350px; }
+
+/* line 474, /Users/jose/Documents/my.web/scss/_api */
+.about-us .column-three .circle-three {
+  height: 100px;
+  position: relative;
+  margin: 0 auto;
+  border: 2px solid #f0f0f0;
+  background: url(../img/icons/illustrator.gif) white no-repeat center center;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  width: 100px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+/* line 492, /Users/jose/Documents/my.web/scss/_api */
+.about-us .column-three .circle-three:hover {
+  border: 2px solid #0DE5A8; }
+
+/* Skills */
+/* line 498, /Users/jose/Documents/my.web/scss/_api */
+.skills {
+  position: relative;
+  width: 100%;
+  background: white;
+  z-index: 10; }
+
+/* line 505, /Users/jose/Documents/my.web/scss/_api */
+.skills .content {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+/* line 512, /Users/jose/Documents/my.web/scss/_api */
+.skills h1 {
+  font-size: 34px;
+  color: black;
+  text-align: center;
+  margin-top: 120px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2; }
+
+/* line 524, /Users/jose/Documents/my.web/scss/_api */
+.skills hr {
+  color: black;
+  margin-top: 30px;
+  background-color: black;
+  height: 1px;
+  width: 106px;
+  border: 0; }
+
+/* line 534, /Users/jose/Documents/my.web/scss/_api */
+.skills p.title {
+  color: #a4a4a4;
+  margin: 40px auto;
+  width: 300px;
+  line-height: 26px;
+  letter-spacing: 0;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: center; }
+
+/* line 545, /Users/jose/Documents/my.web/scss/_api */
+.skills h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 26px;
+  color: black;
+  line-height: 1.2;
+  letter-spacing: 6px;
+  width: 100%;
+  position: relative;
+  font-weight: 400; }
+
+/* line 557, /Users/jose/Documents/my.web/scss/_api */
+.skills p {
+  text-align: center;
+  font-size: 14px;
+  width: 250px;
+  margin: 30px auto;
+  color: #a4a4a4;
+  line-height: 26px;
+  letter-spacing: 0;
+  position: relative;
+  font-weight: 200; }
+
+/* line 569, /Users/jose/Documents/my.web/scss/_api */
+.skills .column-one {
+  margin-top: 40px;
+  width: 450px;
+  float: left;
+  margin-bottom: 70px;
+  height: 450px; }
+
+/* line 577, /Users/jose/Documents/my.web/scss/_api */
+.skills .column-one .chart-one {
+  height: 450px;
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+/* line 589, /Users/jose/Documents/my.web/scss/_api */
+.skills .column-two {
+  margin-top: 40px;
+  width: 450px;
+  float: left;
+  margin-bottom: 70px;
+  height: 450px; }
+
+/* line 597, /Users/jose/Documents/my.web/scss/_api */
+.skills .column-two .chart-two {
+  height: 450px;
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  /*cursor:pointer;*/
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+/* line 610, /Users/jose/Documents/my.web/scss/_api */
+.skills .column-three {
+  margin-top: 40px;
+  width: 300px;
+  float: left;
+  margin-bottom: 70px;
+  height: 350px; }
+
+/* line 618, /Users/jose/Documents/my.web/scss/_api */
+.skills .column-three .chart-three {
+  height: 450px;
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+/* Portfolio */
+/* line 634, /Users/jose/Documents/my.web/scss/_api */
+.portfolio {
+  position: relative;
+  width: 100%;
+  background: #f3f3f3;
+  z-index: 10; }
+
+/* line 642, /Users/jose/Documents/my.web/scss/_api */
+.portfolio .portfolio-margin {
+  position: relative;
+  width: 900px;
+  overflow: hidden;
+  margin: 0 auto; }
+
+/* line 649, /Users/jose/Documents/my.web/scss/_api */
+.portfolio .portfolio-margin .read-more {
+  width: 183px;
+  height: 47px;
+  position: relative;
+  margin: 50px auto 100px;
+  line-height: 47px;
+  border: 1px solid #333333;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333333;
+  cursor: pointer;
+  font-size: 14px;
+  background: none;
+  -webkit-transition: all 0.6s ease-in;
+  -moz-transition: all 0.6s ease-in;
+  -ms-transition: all 0.6s ease-in;
+  -o-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
+  letter-spacing: 1px; }
+
+/* line 670, /Users/jose/Documents/my.web/scss/_api */
+.portfolio .portfolio-margin .read-more:hover {
+  background: #0DE5A8;
+  color: white;
+  border: 1px solid #0DE5A8; }
+
+/* line 676, /Users/jose/Documents/my.web/scss/_api */
+.portfolio .portfolio-margin h1 {
+  font-size: 34px;
+  color: black;
+  text-align: center;
+  margin-top: 120px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2; }
+
+/* line 687, /Users/jose/Documents/my.web/scss/_api */
+.portfolio .portfolio-margin hr {
+  color: black;
+  margin-top: 30px;
+  background-color: black;
+  height: 1px;
+  width: 106px;
+  border: 0; }
+
+/* Portfolio grid */
+/* line 701, /Users/jose/Documents/my.web/scss/_api */
+.grid {
+  margin-top: 70px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 70px;
+  overflow: hidden; }
+
+/* line 709, /Users/jose/Documents/my.web/scss/_api */
+.grid li {
+  width: 285px;
+  height: 224px;
+  margin: 0 15px 15px 0;
+  float: left;
+  position: relative;
+  overflow: hidden; }
+
+/* line 718, /Users/jose/Documents/my.web/scss/_api */
+.grid img {
+  width: 100%;
+  height: 224px;
+  float: left;
+  position: relative; }
+
+/* line 725, /Users/jose/Documents/my.web/scss/_api */
+.grid .text {
+  position: absolute;
+  width: 285px;
+  height: 100%;
+  background: #ada074;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease-in;
+  -moz-transition: all 0.6s ease-in;
+  -ms-transition: all 0.6s ease-in;
+  -o-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in; }
+
+/* line 739, /Users/jose/Documents/my.web/scss/_api */
+.grid .text:hover {
+  opacity: 1; }
+
+/* line 743, /Users/jose/Documents/my.web/scss/_api */
+.grid .no-text {
+  position: absolute;
+  width: 285px;
+  height: 100%;
+  background: rgba(173, 160, 116, 0.5);
+  z-index: 2;
+  opacity: 0; }
+
+/* line 752, /Users/jose/Documents/my.web/scss/_api */
+.grid p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 26px;
+  padding: 0 20px;
+  margin-top: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #FFF; }
+
+/* line 763, /Users/jose/Documents/my.web/scss/_api */
+.grid p.description {
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 400;
+  color: #FFF;
+  position: relative; }
+
+/* line 773, /Users/jose/Documents/my.web/scss/_api */
+.clear {
+  clear: both; }
+
+/* Partners */
+/* line 779, /Users/jose/Documents/my.web/scss/_api */
+.partners {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url('../img/background/partners.jpg') 0px 0px fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 10; }
+
+/* line 791, /Users/jose/Documents/my.web/scss/_api */
+.partners .opacity {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background: rgba(79, 79, 79, 0.6); }
+
+/* line 798, /Users/jose/Documents/my.web/scss/_api */
+.partners .content {
+  position: absolute;
+  width: 900px;
+  height: 190px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+/* line 809, /Users/jose/Documents/my.web/scss/_api */
+.partners h2 {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 32px;
+  font-weight: 200;
+  text-align: center; }
+
+/* line 817, /Users/jose/Documents/my.web/scss/_api */
+.partners .logo {
+  position: relative;
+  width: 900px;
+  overflow: hidden;
+  margin-top: 50px;
+  text-align: center; }
+
+/* line 825, /Users/jose/Documents/my.web/scss/_api */
+.partners .logo img {
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+/* line 834, /Users/jose/Documents/my.web/scss/_api */
+.partners .logo img:hover {
+  opacity: 1; }
+
+/* Contact */
+/* line 840, /Users/jose/Documents/my.web/scss/_api */
+.contact {
+  position: relative;
+  width: 100%;
+  background: white;
+  z-index: 10;
+  overflow: hidden;
+  margin-bottom: 300px; }
+
+/* line 850, /Users/jose/Documents/my.web/scss/_api */
+.contact .content {
+  position: relative;
+  width: 900px;
+  overflow: hidden;
+  margin: 60px auto 65px auto; }
+
+/* line 858, /Users/jose/Documents/my.web/scss/_api */
+.contact h1 {
+  font-size: 34px;
+  color: black;
+  text-align: center;
+  margin-top: 120px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2; }
+
+/* line 870, /Users/jose/Documents/my.web/scss/_api */
+.contact hr {
+  color: black;
+  margin-top: 30px;
+  background-color: black;
+  height: 1px;
+  width: 106px;
+  border: 0; }
+
+/* line 879, /Users/jose/Documents/my.web/scss/_api */
+.contact .content .form {
+  width: 455px;
+  overflow: hidden;
+  height: auto;
+  float: left; }
+
+/* line 886, /Users/jose/Documents/my.web/scss/_api */
+.contact .content .form .column {
+  width: 180px;
+  overflow: hidden;
+  height: auto;
+  float: left;
+  letter-spacing: 1px;
+  margin-bottom: 30px; }
+
+/* line 895, /Users/jose/Documents/my.web/scss/_api */
+.contact .content .form .column-2 {
+  width: 210px;
+  padding-left: 60px;
+  overflow: hidden;
+  height: auto;
+  float: left;
+  letter-spacing: 1px;
+  margin-bottom: 30px; }
+
+/* line 905, /Users/jose/Documents/my.web/scss/_api */
+.contact .content .form .column-3 {
+  width: 450px;
+  overflow: hidden;
+  height: auto;
+  float: left;
+  letter-spacing: 1px; }
+
+/* line 913, /Users/jose/Documents/my.web/scss/_api */
+.contact .content .contact-text {
+  width: 405px;
+  overflow: hidden;
+  height: auto;
+  font-weight: 200;
+  float: left;
+  padding-left: 40px;
+  color: black;
+  font-size: 14px;
+  line-height: 26px; }
+
+/* line 925, /Users/jose/Documents/my.web/scss/_api */
+strong {
+  font-weight: 700; }
+
+/* line 930, /Users/jose/Documents/my.web/scss/_api */
+input {
+  width: 180px;
+  height: 40px;
+  background: #f8f7f7;
+  border-top: 1px solid #333;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  color: #333;
+  font-weight: 200;
+  line-height: 40px;
+  padding-left: 15px;
+  font-family: 'Montserrat', 'Lato', sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px; }
+
+/* line 948, /Users/jose/Documents/my.web/scss/_api */
+input:focus {
+  background: #f4f4f4; }
+
+/* line 950, /Users/jose/Documents/my.web/scss/_api */
+textarea {
+  width: 420px;
+  height: 150px;
+  border-top: 1px solid #333;
+  border-bottom: 0;
+  line-height: 20px;
+  border-left: 0;
+  border-right: 0;
+  background: #f8f7f7;
+  color: #333;
+  font-weight: 200;
+  padding: 15px 0 0 15px;
+  font-family: 'Montserrat', 'Lato', sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px; }
+
+/* line 968, /Users/jose/Documents/my.web/scss/_api */
+textarea:focus {
+  background: #f4f4f4; }
+
+/* line 971, /Users/jose/Documents/my.web/scss/_api */
+input.submit {
+  width: 100px;
+  height: 34px;
+  float: right;
+  margin: 20px 10px 0 0;
+  border: 0;
+  font-weight: 700;
+  text-align: right;
+  background: none;
+  -webkit-transition: all 0.6s ease-in;
+  -moz-transition: all 0.6s ease-in;
+  -ms-transition: all 0.6s ease-in;
+  -o-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in; }
+
+/* Footer */
+/* line 990, /Users/jose/Documents/my.web/scss/_api */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #3c3c3c; }
+
+/* line 997, /Users/jose/Documents/my.web/scss/_api */
+.footer .logo {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  margin: 0 auto;
+  padding-top: 50px; }
+
+/* line 1007, /Users/jose/Documents/my.web/scss/_api */
+.footer .menu-footer {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px;
+  overflow: hidden;
+  position: relative; }
+
+/* line 1017, /Users/jose/Documents/my.web/scss/_api */
+.footer .menu-footer a {
+  line-height: 46px;
+  padding: 10px;
+  color: #a4a4a4;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+/* line 1028, /Users/jose/Documents/my.web/scss/_api */
+.footer .menu-footer a:hover {
+  color: #0DE5A8; }
+
+/* line 1033, /Users/jose/Documents/my.web/scss/_api */
+.footer .copyright {
+  width: 80%;
+  position: relative;
+  font-weight: 200;
+  margin: 0 auto;
+  padding: 30px 0 50px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 36px;
+  color: #a4a4a4; }
+
+/* line 1045, /Users/jose/Documents/my.web/scss/_api */
+.footer .copyright a {
+  color: #a4a4a4;
+  text-decoration: none; }
+
+/*# sourceMappingURL=master.css.map */
