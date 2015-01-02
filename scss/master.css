@@ -496,7 +496,7 @@ h1 span {
   position: relative;
   margin: 0 auto;
   border: 2px solid #f0f0f0;
-  background: url(../img/icons/engineer.gif) white no-repeat center center;
+  background: url(../img/icons/developer-green.png) white no-repeat center center;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
@@ -526,7 +526,7 @@ h1 span {
   position: relative;
   margin: 0 auto;
   border: 2px solid #f0f0f0;
-  background: url(../img/icons/designer.gif) white no-repeat center center;
+  background: url(../img/icons/designer-green.png) white no-repeat center center;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
@@ -556,7 +556,7 @@ h1 span {
   position: relative;
   margin: 0 auto;
   border: 2px solid #f0f0f0;
-  background: url(../img/icons/illustrator.gif) white no-repeat center center;
+  background: url(../img/icons/illustrator-green.png) white no-repeat center center;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
