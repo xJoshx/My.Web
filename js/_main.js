@@ -175,8 +175,24 @@ var options_radar = {
 };
 
 /* Assign the charts */
-var ctx = $(".skills .column-one .chart-one").get(0).getContext("2d");
-var skillsChart = new Chart(ctx).Radar(data_radar, options_radar);
+var _ctx = $(".skills .column-one .chart-one").get(0).getContext("2d");
+var _skillsChart = new Chart(_ctx).Radar(data_radar, options_radar);
 
-ctx = $(".skills .column-two .chart-two").get(0).getContext("2d");
-skillsChart = new Chart(ctx).Pie(data_pie, options_pie);
+_ctx = $(".skills .column-two .chart-two").get(0).getContext("2d");
+_skillsChart = new Chart(_ctx).Pie(data_pie, options_pie);
+
+
+/* The tips */
+
+// Create a style for all tag Opentips
+Opentip.styles.jobs = {
+  showOn: 'mouseover', // this will disable the default <a /> link behaviour.
+  target: true, // Takes the <a /> element as target
+  tipJoint: "top", // So the tooltip floats above the link
+  group: "jobs", // Ensures that only one tag Opentip is visible
+  shadowBlur: 10
+};
+
+
+var _logoUpm = new Opentip($("#logo-upm"), "6 months. Investigation group. Artificial vision stuff (Opencv)", {style: "jobs"});
+var _logoEntry = new Opentip($("#logo-entry"), "Since July, 2014. Event management Startup. Front-End, Back-End, DB, iOS App...", {style: "jobs"});
